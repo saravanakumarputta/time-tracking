@@ -1,0 +1,15 @@
+.btn {
+	background-color: #3b478f;
+	color: #fff;
+	padding: 0.5rem;
+	border-radius: 3px;
+}
+
+.danger {
+	background-color: #ff0100;
+}
+
+.disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}

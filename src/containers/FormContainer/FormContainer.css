@@ -1,0 +1,12 @@
+.form-container {
+	width: 80%;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 1rem;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.form-action {
+	margin-top: 2rem;
+}

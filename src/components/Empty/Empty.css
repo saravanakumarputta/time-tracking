@@ -1,0 +1,12 @@
+.no-content img {
+  width: 100%;
+}
+
+.no-content div {
+  font-weight: 600;
+  text-align: center;
+}
+
+.image-holder {
+  width: 40%;
+}
