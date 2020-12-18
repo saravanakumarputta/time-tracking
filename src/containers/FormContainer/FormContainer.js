@@ -58,15 +58,18 @@ class FormContainer extends React.Component {
 
 	handleAddTask() {
 		let { taskTitle, selectedTags } = this.state;
+		if (taskTitle) {
+			let taskInfo = {
+				id: new Date().getTime().toString(),
+				title: taskTitle,
+				tags: selectedTags
+			};
 
-		let taskInfo = {
-			id: new Date().getTime().toString(),
-			title: taskTitle,
-			tags: selectedTags
-		};
-
-		this.props.addTask(taskInfo);
-		this.props.history.push('/');
+			this.props.addTask(taskInfo);
+			this.props.history.push('/');
+		} else {
+			this.setState({ titleErrMsg: "Title Canno't be empty" });
+		}
 	}
 
 	handleUpdateTask() {
